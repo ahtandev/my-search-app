@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.pagination-list-item {
+		@apply relative block rounded bg-transparent py-2 px-3 mx-2 text-gray-300 enabled:transition enabled:hover:bg-gray-100 enabled:hover:text-gray-500;
+	}
+
+	.pagination-list-item-disabled {
+		@apply relative block rounded bg-transparent py-2 px-3 mx-2 text-gray-600 cursor-not-allowed;
+	}
+}
+
+html,
+body {
+	height: 100%;
+}
+
+#__next {
+	height: 100%;
+}
